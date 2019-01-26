@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .nav_top {
+            line-height: 50px;
+        }
+
+        /*爱享那个图标*/
+        .navbar-header a {
+            font-size: 14px;
+            color: rgba(255, 0, 0, 0);
+            width: 76px;
+            height: 37px;
+            display: block;
+            margin-top: 15px;
+        }
+
+        /*  生活家导航栏*/
+        .navbar .nav_icon_2 a {
+            font-size: 14px;
+            color: rgba(255, 0, 0, 0);
+            width: 193px;
+            height: 37px;
+            display: block;
+            margin-top: 15px;
+        }
+
+        /*  导航栏1170px以上占70%*/
+        @media screen and (min-width: 1170px) {
+            .nav_div {
+                width: 70%;
+                margin: auto !important;
+            }
+        }
+
+        /*分类标签低于1300px消失*/
+        @media screen and (max-width: 1300px) {
+            .nav_a {
+                display: none;
+            }
+        }
+
+        /* 分类那个按钮的外边框*/
+        .collapse .nav_a a {
+            display: block;
+            border: solid 1px #CCCCCC;
+            border-radius: 60px;
+            font-size: 1em;
+            text-decoration: none;
+            color: #777;
+            width: 80px;
+            height: 30px;
+            margin-left: 30px;
+            text-align: center;
+            margin-top: 20px;
+            line-height: 28px;
+        }
+
+        /*分类标签的划入样式*/
+        .collapse .nav_a a:hover {
+            color: #ff7e7e;
+            border: solid 1px #ff7e7e;
+            background-color: rgba(255, 192, 203, 0.55);
+        }
+
+        .collapse .nav_li {
+            margin-right: 50px;
+        }
+
+        /*注册登录按钮*/
+        .collapse .nav_li li {
+            font-size: 1.3em;
+            margin-top: 10px;
+            margin-right: 50px;
+        }
+
+        /*搜索按钮的form表单的css*/
+        .navbar .collapse .nav_button {
+            margin-left: 30px;
+        }
+
+        /*搜索框*/
+        .navbar .collapse .nav_button input {
+            border: solid 1px #ff7e7e;
+            border-bottom-left-radius: 60px;
+            border-top-left-radius: 60px;
+            box-shadow: none;
+        }
+
+        /*搜索框边上的按钮*/
+        .navbar .collapse .nav_button button {
+            background-color: #ff7e7e;
+            border: 0;
+            width: 50px;
+            border-bottom-right-radius: 60px;
+            border-top-right-radius: 60px;
+            margin-left: -5px;
+            outline: none;
+            margin-top: 3px;
+        }
+    </style>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top nav_top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!--中间70%那部分-->
+        <div class="nav_div">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <!--响应式的点击按钮-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--爱享的icon-->
+                <a href="#" style="background-image: url('./img/icon_4.png');background-size: 76px">堆糖</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--分类的a标签-->
+                <ul class="nav navbar-nav nav_a">
+                    <a href="#">分类 <span class="glyphicon glyphicon-menu-down"></span></a>
+                </ul>
+                <ul class="nav navbar-nav navbar-right nav_li">
+                    <li><a href="#">生活家</a></li>
+                    <li><a href="#">登录/注册</a></li>
+                    <!--下拉列表-->
+                    <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"-->
+                    <!--aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!---->
+                    <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="#">Action</a></li>-->
+                    <!--<li><a href="#">Another action</a></li>-->
+                    <!--<li><a href="#">Something else here</a></li>-->
+                    <!--<li role="separator" class="divider"></li>-->
+                    <!--<li><a href="#">Separated link</a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+                </ul>
+                <!--搜索框-->
+                <form class="navbar-form navbar-left nav_button">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入你想要的内容">
+                    </div>
+                    <button type="submit" class="btn btn-default"><img src="./img/search.svg" alt="error"></button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+</body>
+</html>

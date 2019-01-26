@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>home</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/nav_css.css">
+
+</head>
+<body>
+
+<div class="container">
+    <!--导航栏 navbar-fixed-top为固定在头部-->
+    <nav class="navbar navbar-default navbar-fixed-top nav_top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--中间70%那部分-->
+            <div class="nav_div">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!--响应式的点击按钮-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--爱享的icon-->
+                    <a href="javascript:void(0)"
+                       style="background-image: url('../img/icon_4.png');background-size: 76px">堆糖</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--分类的a标签-->
+                    <ul class="nav navbar-nav nav_a">
+                        <div class="nav_a_a">分类 <span class="glyphicon glyphicon-menu-down"></span></div>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right nav_li">
+                        <li><a href="#">生活家</a></li>
+                        <li><a href="#">登录/注册</a></li>
+                        <!--下拉列表-->
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"-->
+                        <!--aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                    </ul>
+                    <!--搜索框-->
+                    <form class="navbar-form navbar-left nav_button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入你想要的内容">
+                        </div>
+                        <button type="submit" class="btn btn-default"><img src="../img/search.svg" alt="error"></button>
+                    </form>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+    <!--头部-->
+    <div class="header">
+        <!--轮播部分-->
+        <div id="carousel-example-generic" class="carousel slide wheel_Whole" data-ride="carousel">
+            <!-- 轮播图下方的点 -->
+            <ol class="carousel-indicators wheel_point">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- 图片部分-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active ph01">
+                    <img src="../img/first.svg" alt="..." style="width: 100%">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../img/second.svg" alt="..." style="width: 100%">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item ph03">
+                    <img src="../img/third.svg" alt="..." style="width: 100%">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--轮播边上的框-->
+        <div class="community">
+            <div class="hot_top">
+                <span>社区热点</span>
+
+            </div>
+            <div class="community_hr"></div>
+            <div class="community_li">
+
+                <!--热点标签-->
+                <div class="community_a"><a href="">都是</a></div>
+                <div class="community_a"><a href="">手打</a></div>
+                <div class="community_a"><a href="">发放</a></div>
+                <div class="community_a"><a href="">法尔</a></div>
+                <div class="community_a"><a href="">恶女</a></div>
+                <div class="community_a"><a href="">发到</a></div>
+                <div class="community_a"><a href="">第二</a></div>
+                <div class="community_a"><a href="">挨个</a></div>
+                <div class="community_a"><a href="">问题</a></div>
+            </div>
+        </div>
+        <div class="community_hot">
+            <!--热点工具-->
+            <div class="community_span"><span class="one">精选</span><span class="two">今日访谈</span></div>
+            <div class="community_span"><span class="one">工具</span><span class="two">抓图小助手</span></div>
+            <div class="community_hr"></div>
+            <!--小广告-->
+            <div style="margin-top: 10px" class="community_button">
+                <div class="hot_left"><img
+                        src="https://b-ssl.duitang.com/uploads/item/201806/06/20180606174907_WHMTS.png" alt=""
+                        style="width: 100%"></div>
+                <div class="hot_right"><span class="span_one">美好生活研究所</span><br><span class="span_two">感受美好生活</span><br>
+                    <button class="hot_button">立即下载</button>
+                </div>
+            </div>
+        </div>
+        <!--推荐关注-->
+
+
+    </div>
+
+    <div class="body_container">
+        <!--左边动态添加区域-->
+        <div class="body_left">
+            <!--左侧动态-->
+            <div class="left_share">
+                <ul>
+                    <li class="active_li_top active">每日精选</li>
+                    <li class="active_li_button buuu">我的关注</li>
+                </ul>
+            </div>
+            <!--中间内容-->
+            <div class="middle_share">
+                <!--中间内容*2-->
+                <div class="middle_big_content">
+                    <div class="middle_content">
+                        <!--头像加名字-->
+                        <div class="top_icon">
+                            <div class="top_icon_left"><img src="../img/icon_4.png" alt="error"></div>
+                            <div class="top_icon_right"><p class="p_one"><strong>小A</strong></p>
+                                <p class="p_two">这是他的说明</p>
+                            </div>
+                        </div>
+                        <!--文本-->
+                        <div class="middle_span"><span class="abstract_span">这里吧啦吧啦一大堆字</span></div>
+                        <!--图片-->
+                        <div class="button_img"><img src="../img/test01.jpg" alt="error"></div>
+                    </div>
+                    <div style="width: 100%;height: 1px;background-color: #CCCCCC"></div>
+                    <div class="point">
+                        <div class="point_0 point_1 true"><img src="../img/praise.png"  alt=""><span>赞</span></div>
+                        <div class="point_hr"></div>
+                        <div class="point_0 point_2 true"><img src="../img/collection.png" alt=""><span>收藏</span></div>
+                        <div class="point_hr"></div>
+                        <div class="point_0 point_3"><img src="../img/lue.png" alt=""><span>更多</span>
+                            <!--<ul class="point_ul">-->
+                            <!--<li>1</li>-->
+                            <!--<li>2</li>-->
+                            <!--<li>3</li>-->
+                            <!--</ul>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边区域-->
+        <!--推荐关注-->
+        <div class="body_right">
+            <div class="celebrity">
+                <div class="celebrity_span">
+                    <span>推荐关注</span>
+                    <span class="huanyihuan">换一批</span>
+                </div>
+                <div style="width: 100%;height: 1px;background-color: #CCCCCC"></div>
+                <div class="celebrity_ul">
+                    <ul>
+                    </ul>
+                </div>
+                <div style="width: 100%;height: 1px;background-color: #CCCCCC"></div>
+                <div class="celebrity_seemore"><span>查看更多&gt;</span></div>
+            </div>
+        </div>
+        <div class="app">
+            <img src="../img/app.png" alt="error" id="fixPara">
+        </div>
+        <div class="app_top">
+            <a href="javascript:" id="btn"><img src="../img/top.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<a href="home.html" target="_blank">tiaozhuan</a>
+<script src="../js/lunbo.js"></script>
+<script src="../js/nav_js.js"></script>
+</body>
+</html>
