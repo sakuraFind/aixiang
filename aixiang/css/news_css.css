@@ -1,0 +1,383 @@
+/*主页导航栏*/
+.nav_top {
+    line-height: 50px;
+}
+
+/*爱享那个图标*/
+.navbar-header a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 76px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  生活家导航栏*/
+.navbar .nav_icon_2 a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 193px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+/*登录注册部分*/
+#login_nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+/*登录注册消失*/
+.disappear{
+    display: none!important;
+}
+
+/*登录下拉菜单*/
+.kong{
+    width: 60px;
+}
+#share_nav a{
+    padding: 0;
+}
+#share_nav .dropdown-menu_three{
+    left: -30px;
+}
+#share_nav span{
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#share_nav .drop_down_three span{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border-radius: 60px;
+    color: white;
+    background-color: #ff7e7e;
+}
+#share_nav ul li a{
+    height: 40px;
+    line-height: 40px;
+}
+#share_nav ul li a span{
+    background-image: url("../img/KHawy.png");
+    height:30px;
+    width: 28px;
+    margin-left: 0;
+}
+#share_nav ul li a .span_share{
+    background-position: -12px -33px;
+}
+#share_nav ul li a .span_share_two{
+    background-position: -71px -33px;
+}
+#share_nav ul li a .span_share_three{
+    background-position: -42px -33px;
+}
+#share_nav ul{
+    padding: 0;
+    margin-top: 7px;
+}
+#share_nav ul li{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0;
+}
+#new_nav a{
+    padding: 0;
+}
+#new_nav .dropdown-menu_two{
+    left: -60px;
+}
+#new_nav span{
+    font-weight: 500;
+    line-height: 50px;
+}
+#new_nav ul li a{
+    height: 40px;
+    line-height: 40px;
+}
+#new_nav ul li a span{
+    background-image: url("../img/KHawy.png");
+    height: 30px;
+    width: 28px;
+    margin-left: 0;
+}
+#new_nav ul li a .span_new{
+    background-position: -129px -25px;
+}
+#new_nav ul li a .span_new_two{
+    background-position: -99px -24px;
+}
+
+#new_nav ul{
+    padding: 0;
+    margin-top: 7px;
+}
+#new_nav ul li{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0;
+}
+#login_nav a{
+    padding: 0;
+}
+
+#login_nav span{
+    font-weight: 100;
+    margin-left: 10px;
+}
+#login_nav ul li a{
+    height: 40px;
+    line-height: 40px;
+}
+#login_nav ul li a span{
+    background-image: url("../img/KHawy.png");
+    height: 30px;
+    width: 28px;
+    margin-left: 0;
+}
+#login_nav ul li a .span_home{
+    background-position: -73px -56px;
+}
+#login_nav ul li a .span_Account{
+    background-position: -103px -56px;
+}
+#login_nav ul li a .span_out{
+    background-position: -133px -56px;
+}
+#login_nav ul{
+    padding: 0;
+    margin-top: 7px;
+}
+#login_nav ul li{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0;
+}
+/*以上为下拉菜单*/
+
+/*  导航栏1170px以上占70%*/
+@media screen and (min-width: 1170px) {
+    .nav_div {
+        width: 70%;
+        margin: auto !important;
+    }
+}
+
+/*分类标签低于1300px消失*/
+@media screen and (max-width: 1300px) {
+    .nav_a {
+        display: none;
+    }
+}
+
+/* 分类那个按钮的外边框*/
+.collapse .nav_a .nav_a_a {
+    display: block;
+    border: solid 1px #CCCCCC;
+    border-radius: 60px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #777;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+/*分类标签的划入样式*/
+
+.collapse .nav_a .nav_a_a:hover {
+    color: #ff7e7e;
+    border: solid 1px #ff7e7e;
+    background-color: rgba(255, 192, 203, 0.15);
+}
+.collapse .nav_a ul{
+    left: 300px;
+    width: 260px;
+}
+.collapse .nav_a ul li{
+    display: inline-block;
+    width: 50px;
+    margin-left: 20px;
+}
+.collapse .nav_a ul li a{
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0;
+}
+.collapse .nav_li {
+    margin-right: 0;
+}
+
+/*注册登录按钮*/
+.collapse .nav_li li {
+    font-size: 1.3em;
+    margin-top: 10px;
+    /*margin-right: 50px;*/
+}
+
+/*搜索按钮的form表单的css*/
+.navbar .collapse .nav_button {
+    margin-left: 30px;
+}
+
+/*搜索框*/
+.navbar .collapse .nav_button input {
+    border: solid 1px #ff7e7e;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    box-shadow: none;
+}
+
+/*搜索框边上的按钮*/
+.navbar .collapse .nav_button button {
+    background-color: #ff7e7e;
+    border: 0;
+    width: 50px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-left: -5px;
+    outline: none;
+    margin-top: 3px;
+}
+
+/*容器大小*/
+.container {
+    width: 100%;
+}
+.body_container{
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+}
+@media screen and (max-width: 970px ){
+    .body_container{
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .body_container .left_share {
+        /*border: solid 1px red;*/
+        width: 20%;
+        float: left;
+    }
+    .body_container .right{
+        float: left;
+        width: 80%;
+        box-sizing: border-box;
+        border:  solid 1px #CCCCCC;
+    }
+}
+.body_container .left_share {
+    /*border: solid 1px red;*/
+    width: 15%;
+    float: left;
+}
+
+.body_container .left_share ul {
+    /*text-align: left;*/
+    padding: 0;
+}
+/*左侧li标签*/
+.body_container .left_share ul li {
+    /*margin-bottom: 20px;*/
+    list-style: none;
+    /*border: solid 1px red;*/
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+/*划入样式  js控制*/
+.body_container .left_share ul .buuu:hover {
+    background-color: rgba(204, 204, 204, 0.14);
+}
+
+.body_container .left_share .active {
+    background-color: #faeded;
+    color: #ff7e7e;
+}
+
+/*精选前面的红杠*/
+.body_container .left_share .active::after {
+    content: "|";
+    color: #ff7e7e;
+    background-color: #ff7e7e;
+    position: relative;
+    left: -65px;
+}
+/*右侧区域*/
+.body_container .right{
+    float: left;
+    width: 85%;
+    box-sizing: border-box;
+    border:  solid 1px #CCCCCC;
+}
+/*右上部分*/
+.body_container .right .right_top{
+    height: 60px;
+    width: 100%;
+}
+.body_container .right .right_top ul{
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.body_container .right .right_top ul li{
+    float: left;
+    padding-top: 0;
+    line-height: 60px;
+    margin-right: 50px;
+    color: #777;
+}
+@media screen and (min-width: 1300px){
+    .body_container .right .right_top ul li{
+        float: left;
+        padding-top: 0;
+        line-height: 60px;
+        margin-right: 80px;
+        color: #777;
+    }
+    .body_container .right .right_top ul{
+        list-style: none;
+        overflow: hidden;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        padding: 0 100px;
+    }
+}
+.body_container .right .right_top ul li:hover{
+    cursor: pointer;
+    color: #ff7e7e;
+}
+.checked{
+    color: #ff7e7e !important;
+}
+.body_container .right_button{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+.body_container .right_button span{
+    /*display: table-cell;*/
+    line-height: 300px;
+    color: #CCCCCC;
+
+}
+.notshow{
+    display: none;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类</title>
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+
+    <!--顶部导航条-->
+    <nav class="navbar navbar-default navbar-fixed-top nav_top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--中间70%那部分-->
+            <div class="nav_div">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!--响应式的点击按钮-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--爱享的icon-->
+                    <a href="javascript:void(0)"
+                       style="background-image: url('../img/icon_4.png');background-size: 76px">堆糖</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--分类的a标签-->
+                    <ul class="nav navbar-nav nav_a">
+                        <div class="nav_a_a drop_down_four">分类 <span class="glyphicon glyphicon-menu-down"></span></div>
+                        <ul class="dropdown-menu dropdown-menu_four">
+                            <li><a href="#">家居生活</a></li>
+                            <li><a href="#">花卉</a></li>
+                            <li><a href="#">美景</a></li>
+                            <li><a href="#">人文艺术</a></li>
+                            <li><a href="#">旅游</a></li>
+                            <li><a href="#">古风</a></li>
+                            <li><a href="#">动漫</a></li>
+                            <li><a href="#">头像</a></li>
+                            <li><a href="#">摄影</a></li>
+                            <li><a href="#">美食</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right nav_li">
+                        <li class="dropdown" id="share_nav">
+                            <a href="#" class="dropdown-toggle drop_down_three" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><span>&nbsp;&nbsp;&nbsp;&nbsp;+发布</span></a>
+                            <ul class="dropdown-menu dropdown-menu_three">
+                                <li><a href="#"><span style="display: inline-block" class="span_share">&nbsp;</span>上传图片</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_share_two">&nbsp;</span>发布文章</a></li>
+                                <li id="share_video"><a href="#"><span style="display: inline-block" class="span_share_three">&nbsp;</span>发布视频</a></li>
+                            </ul>
+                        </li>
+                        <li class="kong"></li>
+                        <li><a href="#">生活家</a></li>
+                        <li class="kong"></li>
+                        <li class="dropdown" id="new_nav">
+                            <a href="#" class="dropdown-toggle drop_down_two" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><span>消息</span></a>
+                            <ul class="dropdown-menu dropdown-menu_two">
+                                <li><a href="#"><span style="display: inline-block" class="span_new">&nbsp;</span>消息提醒</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_new_two">&nbsp;</span>动态提醒</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="kong"></li>
+                        <li id="rigist_nav" class=""><a href="#">登录/注册</a></li>
+                        <!--下拉列表-->
+                        <li class="dropdown" id="login_nav">
+                            <a href="#" class="dropdown-toggle drop_down_one" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false" ><div id="nav_icon"></div></a>
+
+                            <ul class="dropdown-menu dropdown-menu_one">
+                                <li id="span_home"><a href="#"><span style="display: inline-block" class="span_home">&nbsp;</span>个人中心</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_Account ">&nbsp;</span>账号设置</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_out">&nbsp;</span>退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--搜索框-->
+                    <form class="navbar-form navbar-left nav_button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入你想要的内容">
+                        </div>
+                        <button type="submit" class="btn btn-default"><img src="../img/search.svg" alt="error"></button>
+                    </form>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+
+
+    <!--分类及展示-->
+    <div class="main">
+        <div class="main01">
+            <ul id="list">
+                <div class="handwork">手工DIY</div>
+                <li class="lis">
+                    <span>小物品</span>
+                    <ul>
+                        <li><a href="">废物利用</a></li>
+                        <li><a href="">手工本子</a></li>
+                        <li><a href="">橡皮章</a></li>
+                        <li><a href="">粘土</a></li>
+                        <li><a href="">羊毛毡</a></li>
+                        <li><a href="">纽扣</a></li>
+                        <li><a href="">拼豆</a></li>
+                        <li><a href="">石绘</a></li>
+                    </ul>
+                </li>
+                <li class="lis">
+                    <span>编制布艺</span>
+                    <ul>
+                        <li><a href="">针织钩花</a></li>
+                        <li><a href="">刺绣</a></li>
+                        <li><a href="">十字绣</a></li>
+                        <li><a href="">拼布</a></li>
+                        <li><a href="">不织布</a></li>
+                        <li><a href="">绳结</a></li>
+                        <li><a href="">串珠</a></li>
+                        <li><a href="">绕线</a></li>
+                    </ul>
+                </li>
+                <li class="lis">
+                    <span>纸艺</span>
+                    <ul>
+                        <li><a href="">折纸</a></li>
+                        <li><a href="">剪纸</a></li>
+                        <li><a href="">衍纸</a></li>
+                        <li><a href="">纸模</a></li>
+                        <li><a href="">卡片</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main02">
+            <div class="main020">手工DIY&lt衍纸</div>
+            <div></div>
+            <div class="main021">
+                <div class="main021-0">
+                    <div class="main021-01"><img src="https://b-ssl.duitang.com/uploads/blog/201402/15/20140215060822_G285S.thumb.224_0.jpeg" alt=""></div>
+                    <div class="main021-02">独家定制ipadAIR羊毛毡卡通保护套超级玛丽保护套</div>
+                    <div class="main021-03">
+                        <div class="main021-031"><img src="../img/praise.svg" alt=""><span>11</span></div>
+                        <div><img src="../img/collect.svg" alt=""><span>1000</span></div>
+                    </div>
+                    <div class="main021-04">
+                        <a href=""><img src="https://b-ssl.duitang.com/uploads/item/201201/19/20120119100539_vNuVc.thumb.24_24_c.jpg" alt=""></a>
+                        <a href=""><p>皮皮虾轩辕黄帝</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/utils.js"></script>
+<script src="../js/nav_js0.js"></script>
+<script src="../js/category.js"></script>
+</body>
+</html>

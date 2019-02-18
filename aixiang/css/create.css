@@ -1,0 +1,226 @@
+.nav_top {
+    line-height: 50px;
+}
+
+/*爱享那个图标*/
+.navbar-header a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 76px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  生活家导航栏*/
+.navbar .nav_icon_2 a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 193px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  导航栏1170px以上占70%*/
+@media screen and (min-width: 1170px) {
+    .nav_div {
+        width: 70%;
+        margin: auto !important;
+    }
+}
+
+/*分类标签低于1300px消失*/
+@media screen and (max-width: 1300px) {
+    .nav_a {
+        display: none;
+    }
+}
+
+/*搜索框*/
+.navbar .collapse .nav_button input {
+    border: solid 1px #ff7e7e;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    box-shadow: none;
+}
+
+/*搜索框边上的按钮*/
+.navbar .collapse .nav_button button {
+    background-color: #ff7e7e;
+    border: 0;
+    width: 50px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-left: -5px;
+    outline: none;
+    margin-top: 3px;
+}
+
+#publish{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #ff7e7e;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    cursor: pointer;
+}
+#add{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    border-radius: 6px;
+    position: absolute;
+    left: 76%;
+    top: 20%;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+#add:hover{
+    color: #ff7e7e;
+}
+#add img{
+    margin-top: -1px;
+}
+
+
+
+/*上传封面样式*/
+.main{
+    margin: 140px;
+}
+.main>.all{
+    width: 700px;
+    margin: auto;
+    background-color: rgba(153, 153, 153, 0.02);
+    height: 400px;
+    margin-top: 20px;
+}
+
+#oDiv{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    overflow: hidden;
+    background-size:100% auto;
+    height: 400px;
+
+}
+.main>.all .tab01-011{
+    margin-top: 10px;
+}
+.main>.all .tab01-011 label{
+    position: absolute;
+    left: 47%;
+    top: 400px;
+}
+#oInput{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+#btn{
+    margin-right: 5px;
+    background-color: #ff7e7e;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.main>textarea{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 700px;
+    height: 40px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 22px;
+    border-bottom:solid 1px #cccccc;
+}
+.main .main1{
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main .main1 .main1-01{
+    width: 100%;
+}
+.main .main2 textarea{
+    width: 700px;
+    margin: auto;
+    display: block;
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+.main .main2 .all{
+    width: 700px;
+    margin: auto;
+    background-color: rgba(153, 153, 153, 0.02);
+    height: 400px;
+}
+#content>div{
+    margin-bottom: 30px;
+}
+
+.main .main2 .all .oDiv1{
+    width: 482px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    overflow: hidden;
+    background-size:100% auto;
+}
+/*.main .main2 .all .tab01-011{*/
+    /*margin-top: 10px;*/
+/*}*/
+/*.main .main2 .all .tab01-011 label{*/
+
+    /*left: 47%;*/
+    /*top: 400px;*/
+/*}*/
+.main .main2 .all .tab01-011 label .oInput1{
+    position: relative;
+    left: 0;
+    top: -30px;
+    opacity: 0;
+    height: 30px;
+    width: 100px;
+}
+.main .main2 .all .tab01-011 label .btn1{
+    /*margin-right: 5px;*/
+    background-color: #ff7e7e;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}

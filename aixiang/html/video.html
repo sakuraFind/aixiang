@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布视频</title>
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="navbar navbar-default navbar-fixed-top nav_top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!--中间70%那部分-->
+                    <div class="nav_div">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <!--响应式的点击按钮-->
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!--爱享的icon-->
+                            <a href="#" style="background-image: url('../img/icon_4.png');background-size: 76px">堆糖</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <div id="publish">发布</div>
+                            <!--分类的a标签-->
+                            <!--<ul class="nav navbar-nav nav_a">-->
+                            <!--&lt;!&ndash;<a href="#">分类 <span class="glyphicon glyphicon-menu-down"></span></a>&ndash;&gt;-->
+                            <!--</ul>-->
+                            <!--<ul class="nav navbar-nav navbar-right nav_li">-->
+                            <!--<li><a href="#">生活家</a></li>-->
+                            <!--<li><a href="#">登录/注册</a></li>-->
+                            <!--&lt;!&ndash;下拉列表&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li class="dropdown">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"&ndash;&gt;-->
+                            <!--&lt;!&ndash;aria-expanded="false">Dropdown <span class="caret"></span></a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;&ndash;&gt;-->
+                            <!--&lt;!&ndash;<ul class="dropdown-menu">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">Action</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">Another action</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">Something else here</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li role="separator" class="divider"></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li><a href="#">Separated link</a></li>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                            <!--</ul>-->
+                            <!--搜索框-->
+                            <form class="navbar-form navbar-left nav_button" style="visibility: hidden">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="请输入你想要的内容">
+                                </div>
+                                <button type="submit" class="btn btn-default"><img src="../img/search.svg" alt="error"></button>
+                            </form>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <h3>新建视频</h3>
+            <div class="main-body">
+                <div class="main-body1">
+                    <span>上传视频:</span>
+                    <div class="main-01">
+                        <span style="display: block">视频大小不超过2G，目前支持mov / mp4 / avi / flv / mkv格式</span>
+                        <div class="main-011">
+                            <video style="display:none;" controls="controls" id="aa" oncanplaythrough="myFunction()">
+                            </video>
+                            <label for="vdb">
+                                <input type="button" id="btn" value="上传视频"><span id="text"></span>
+                                <input type="file" onchange="changeFile(this)"  id="vdb"/>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main-body1">
+                    <span>视频标题:</span>
+                    <div class="main-02"><input type="text" placeholder="不超过30字(必填)" maxlength="30" class="main02-01"></div>
+                </div>
+                <div class="main-body1">
+                    <span>视频描述:</span>
+                    <textarea name="" id="txt1" cols="30" rows="10" placeholder="不超过500字" maxlength="500"></textarea>
+                </div>
+                <div class="main-body1">
+                    <span>视频标签:</span>
+                    <div class="main-02"><input type="text" placeholder="添加合适的标签 用分号分隔（最多可添加5个标签)" class="main02-02"></div>
+                </div>
+                <div class="main-body1">
+                    <span>视频封面:</span>
+                    <div id="oDiv">
+                    </div>
+                    <label for="oInput" class="main3">
+                        <input type="button" id="btn1" value="上传封面"><span id="text1"></span>
+                        <input type="file" accept="image/*" id="oInput" value=""/>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/utils.js"></script>
+    <script src="../js/video.js"></script>
+</body>
+</html>

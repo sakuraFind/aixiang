@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询</title>
+
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container">
+        <!--顶部导航条-->
+        <nav class="navbar navbar-default navbar-fixed-top nav_top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!--中间70%那部分-->
+                <div class="nav_div">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <!--响应式的点击按钮-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--爱享的icon-->
+                        <a href="javascript:void(0)"
+                           style="background-image: url('../img/icon_4.png');background-size: 76px">堆糖</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!--分类的a标签-->
+                        <ul class="nav navbar-nav nav_a">
+                            <div class="nav_a_a drop_down_four">分类 <span class="glyphicon glyphicon-menu-down"></span></div>
+                            <ul class="dropdown-menu dropdown-menu_four">
+                                <li><a href="#">家居生活</a></li>
+                                <li><a href="#">花卉</a></li>
+                                <li><a href="#">美景</a></li>
+                                <li><a href="#">人文艺术</a></li>
+                                <li><a href="#">旅游</a></li>
+                                <li><a href="#">古风</a></li>
+                                <li><a href="#">动漫</a></li>
+                                <li><a href="#">头像</a></li>
+                                <li><a href="#">摄影</a></li>
+                                <li><a href="#">美食</a></li>
+                            </ul>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right nav_li">
+                            <li class="dropdown" id="share_nav">
+                                <a href="#" class="dropdown-toggle drop_down_three" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span>&nbsp;&nbsp;&nbsp;&nbsp;+发布</span></a>
+                                <ul class="dropdown-menu dropdown-menu_three">
+                                    <li><a href="#"><span style="display: inline-block" class="span_share">&nbsp;</span>上传图片</a></li>
+                                    <li><a href="#"><span style="display: inline-block" class="span_share_two">&nbsp;</span>发布文章</a></li>
+                                    <li id="share_video"><a href="#"><span style="display: inline-block" class="span_share_three">&nbsp;</span>发布视频</a></li>
+                                </ul>
+                            </li>
+                            <li class="kong"></li>
+                            <li><a href="#">生活家</a></li>
+                            <li class="kong"></li>
+                            <li class="dropdown" id="new_nav">
+                                <a href="#" class="dropdown-toggle drop_down_two" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"><span>消息</span></a>
+                                <ul class="dropdown-menu dropdown-menu_two">
+                                    <li><a href="#"><span style="display: inline-block" class="span_new">&nbsp;</span>消息提醒</a></li>
+                                    <li><a href="#"><span style="display: inline-block" class="span_new_two">&nbsp;</span>动态提醒</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="kong"></li>
+                            <li id="rigist_nav" class=""><a href="#">登录/注册</a></li>
+                            <!--下拉列表-->
+                            <li class="dropdown" id="login_nav">
+                                <a href="#" class="dropdown-toggle drop_down_one" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false" ><div id="nav_icon"></div></a>
+
+                                <ul class="dropdown-menu dropdown-menu_one">
+                                    <li id="span_home"><a href="#"><span style="display: inline-block" class="span_home">&nbsp;</span>个人中心</a></li>
+                                    <li><a href="#"><span style="display: inline-block" class="span_Account ">&nbsp;</span>账号设置</a></li>
+                                    <li><a href="#"><span style="display: inline-block" class="span_out">&nbsp;</span>退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--搜索框-->
+                        <form class="navbar-form navbar-left nav_button">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="请输入你想要的内容">
+                            </div>
+                            <button type="submit" class="btn btn-default" id="btn"><img src="../img/search.svg" alt="error"></button>
+                        </form>
+
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </div>
+        </nav>
+        <!--顶部导航条结束-->
+
+
+        <!--搜索页面-->
+        <div class="main">
+            <div class="main-kind">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li><a href="#">图片</a></li>
+                    <li><a href="#">专辑</a></li>
+                    <li><a href="#">文章</a></li>
+                    <!--<li><a href="#">商品</a></li>-->
+                    <li><a href="#">达人</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div style="display: block">
+                        <div class="main021">
+                            <!--<div class="main021-0">-->
+                                <!--<div class="main021-01"><img src="https://b-ssl.duitang.com/uploads/item/201802/12/20180212201401_hjgoq.thumb.224_0.jpeg" alt=""></div>-->
+                                <!--<div class="main021-02">独家定制ipadAIR羊毛毡卡通保护套超级玛丽保护套</div>-->
+                                <!--<div class="main021-03">-->
+                                    <!--<div class="main021-031"><img src="../img/praise.svg" alt=""><span>11</span></div>-->
+                                    <!--<div class="main021-032"><img src="../img/collect.svg" alt=""><span>1000</span></div>-->
+                                <!--</div>-->
+                                <!--<div class="main021-04">-->
+                                    <!--<a href="" class="main021-041"><img src="https://b-ssl.duitang.com/uploads/item/201201/19/20120119100539_vNuVc.thumb.24_24_c.jpg" alt=""></a>-->
+                                    <!--<a href="" class="main021-042"><p>皮皮虾轩辕黄帝</p></a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div style="display: none">
+                        <div class="main022">
+                            <!--<div class="main022-01">-->
+                                <!--<a href="">-->
+                                    <!--<div class="main022-011" style="display: flex; justify-content: space-between; position: relative; flex-flow: row wrap;">-->
+                                        <!--<img src="https://b-ssl.duitang.com/uploads/item/201902/14/2019021494219_r5fH2.thumb.224_0.jpeg" alt="">-->
+                                    <!--</div>-->
+                                    <!--<div class="main-022-012">-->
+                                        <!--<h3>永远可爱 永远无赖♡</h3>-->
+                                        <!--<p>53451图片 · 18575收藏</p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="main022-01">-->
+                                <!--<a href="">-->
+                                    <!--<div class="main022-011" style="display: flex; justify-content: space-between; position: relative; flex-flow: row wrap;">-->
+                                        <!--<img src="https://b-ssl.duitang.com/uploads/item/201902/14/2019021494219_r5fH2.thumb.224_0.jpeg" alt="">-->
+                                    <!--</div>-->
+                                    <!--<div class="main-022-012">-->
+                                        <!--<h3>永远可爱 永远无赖♡</h3>-->
+                                        <!--<p>53451图片 · 18575收藏</p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="main022-01">-->
+                                <!--<a href="">-->
+                                    <!--<div class="main022-011" style="display: flex; justify-content: space-between; position: relative; flex-flow: row wrap;">-->
+                                        <!--<img src="https://b-ssl.duitang.com/uploads/item/201902/14/2019021494219_r5fH2.thumb.224_0.jpeg" alt="">-->
+                                    <!--</div>-->
+                                    <!--<div class="main-022-012">-->
+                                        <!--<h3>永远可爱 永远无赖♡</h3>-->
+                                        <!--<p>53451图片 · 18575收藏</p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="main022-01">-->
+                                <!--<a href="">-->
+                                    <!--<div class="main022-011" style="display: flex; justify-content: space-between; position: relative; flex-flow: row wrap;">-->
+                                        <!--<img src="https://b-ssl.duitang.com/uploads/item/201902/14/2019021494219_r5fH2.thumb.224_0.jpeg" alt="">-->
+                                    <!--</div>-->
+                                    <!--<div class="main-022-012">-->
+                                        <!--<h3>永远可爱 永远无赖♡</h3>-->
+                                        <!--<p>53451图片 · 18575收藏</p>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div style="display: none">
+                        <div class="main023">
+                            <!--<div class="main023-01">-->
+                                <!--<div class="main023-011">-->
+                                    <!--<a href=""><img src="https://img3.duitang.com/uploads/people/201803/07/20180307103042_8Nc42.thumb.100_100_c.jpeg" alt=""></a>-->
+                                    <!--<div class="main023-011-01"><p>道上都叫我赤木刚宪</p></div>-->
+                                <!--</div>-->
+                                <!--<p class="main023-012">欧美混血眼妆！内双描边闪亮大眼，超实用的单眼皮眼妆教程！</p>-->
+                                <!--<a href="" class="main023-013">-->
+                                    <!--<div class="main023-013-01">-->
+                                        <!--<span><img src="../img/read.svg" alt="">文章</span>-->
+                                        <!--<img src="https://img3.duitang.com/uploads/item/201804/02/20180402160436_8AzWv.thumb.400_228_c.jpeg" alt="">-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <!--<div style="display: none">-->
+                        <!--<div class="tab01">已发布文章(0)</div>-->
+                        <!--<div class="tab02">您还没有发布任何文章，您可以立即<a>添加文章</a></div>-->
+                    <!--</div>-->
+                    <div style="display: none" class="main-125">
+                        <ul class="main025">
+                            <!--<li class="main025-01">-->
+                                <!--<div><a href=""><img src="https://b-ssl.duitang.com/uploads/files/201312/19/20131219204737_XVinc.thumb.48_48_c.jpeg" alt=""></a></div>-->
+                                <!--<div class="main025-011">-->
+                                    <!--<a href="">眼妆</a>-->
+                                    <!--<div>关注<span>11</span>&nbsp;&nbsp;&nbsp;&nbsp;粉丝<span>11</span></div>-->
+                                <!--</div>-->
+                                <!--<div class="main025-012"><span class="main025-012-01">关注</span></div>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-kind1">
+                <div class="kind1-01">
+                    <div class="kind1-011">
+                        <span class="kind1-011-1">历史记录</span>
+                        <span class="kind1-011-2">清除</span>
+                    </div>
+                    <div class="kind1-012">
+                       <ul id="ul1">
+                           <li><a href="">动漫</a></li>
+                           <li><a href="">动漫</a></li>
+                           <li><a href="">动漫</a></li>
+                           <li><a href="">动漫</a></li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="kind1-01">
+                    <div class="kind1-011">
+                        <span class="kind1-011-1">热门搜索</span>
+                    </div>
+                    <div class="kind1-012">
+                        <ul id="ul2">
+                            <li><a href="">动漫</a></li>
+                            <li><a href="">动漫</a></li>
+                            <li><a href="">动漫</a></li>
+                            <li><a href="">动漫</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/nav_js0.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/life_artist.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.nav_top {
+    line-height: 50px;
+}
+
+/*爱享那个图标*/
+.navbar-header a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 76px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  生活家导航栏*/
+.navbar .nav_icon_2 a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 193px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  导航栏1170px以上占70%*/
+@media screen and (min-width: 1170px) {
+    .nav_div {
+        width: 70%;
+        margin: auto !important;
+    }
+}
+
+/*分类标签低于1300px消失*/
+@media screen and (max-width: 1300px) {
+    .nav_a {
+        display: none;
+    }
+}
+
+/*搜索框*/
+.navbar .collapse .nav_button input {
+    border: solid 1px #ff7e7e;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    box-shadow: none;
+}
+
+/*搜索框边上的按钮*/
+.navbar .collapse .nav_button button {
+    background-color: #ff7e7e;
+    border: 0;
+    width: 50px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-left: -5px;
+    outline: none;
+    margin-top: 3px;
+}
+
+#publish{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #ff7e7e;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    cursor: pointer;
+}
+
+/*主体部分*/
+.container .main{
+    margin: 140px auto;
+    border: 1px solid #e3e3e3;
+    min-width: 940px;
+}
+.container .main  h3{
+    margin: 0px;
+    display: block;
+    height: 72px;
+    padding-left: 50px;
+    line-height: 72px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.container .main .main-body .main-body1{
+    display: flex;
+    margin-top: 60px;
+
+}
+.container .main .main-body .main-body1>span{
+    font-size: 16px;
+    color: #666;
+    margin-left: 40px;
+}
+.container .main .main-body .main-01{
+    margin-left: 40px;
+}
+.container .main .main-body .main-01 .main-011{
+
+}
+.container .main .main-body .main-01 video{
+    width: 200px;
+    margin-top: 20px;
+}
+#vdb{
+    position: relative;
+    opacity: 0;
+    top: -28px;
+}
+.container .main .main-body .main-body1 .main-02 input{
+    border: solid 1px #e3e3e3;
+    height: 32px;
+    width: 400px;
+    padding: 8px 12px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+    margin-left: 40px;
+    outline: none;
+}
+#txt1{
+    width: 460px;
+    height: 218px;
+    margin-left: 40px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border: solid 1px #e3e3e3;
+}
+
+#oDiv{
+    margin-left: 40px;
+    width: 322px;
+    height: 182px;
+    background-color: #cccccc;
+}
+#oInput{
+    width: 322px;
+    height: 182px;;
+}
+.container .main .main-body .main-body1 .main3{
+    margin-left: 20px;
+    margin-top: 158px;
+}
+#oInput{
+    position: relative;
+    top: -26px;
+    opacity: 0;
+}

@@ -1,0 +1,487 @@
+/*主页导航栏*/
+.nav_top {
+    line-height: 50px;
+}
+
+/*爱享那个图标*/
+.navbar-header a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 76px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+
+/*  生活家导航栏*/
+.navbar .nav_icon_2 a {
+    font-size: 14px;
+    color: rgba(255, 0, 0, 0);
+    width: 193px;
+    height: 37px;
+    display: block;
+    margin-top: 15px;
+}
+/*登录注册部分*/
+#login_nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+/*登录注册消失*/
+.disappear{
+    display: none!important;
+}
+
+/*登录下拉菜单*/
+.kong{
+    width: 60px;
+}
+#share_nav a{
+    padding: 0;
+}
+#share_nav .dropdown-menu_three{
+    left: -30px;
+}
+#share_nav span{
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#share_nav .drop_down_three span{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border-radius: 60px;
+    color: white;
+    background-color: #ff7e7e;
+}
+#share_nav ul li a{
+    height: 40px;
+    line-height: 40px;
+}
+#share_nav ul li a span{
+    background-image: url("../img/KHawy.png");
+    height:30px;
+    width: 28px;
+    margin-left: 0;
+}
+#share_nav ul li a .span_share{
+    background-position: -12px -33px;
+}
+#share_nav ul li a .span_share_two{
+    background-position: -71px -33px;
+}
+#share_nav ul li a .span_share_three{
+    background-position: -42px -33px;
+}
+#share_nav ul{
+    padding: 0;
+    margin-top: 7px;
+}
+#share_nav ul li{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0;
+}
+#new_nav a{
+    padding: 0;
+}
+#new_nav .dropdown-menu_two{
+    left: -60px;
+}
+#new_nav span{
+    font-weight: 500;
+    line-height: 50px;
+}
+#new_nav ul li a{
+    height: 40px;
+    line-height: 40px;
+}
+#new_nav ul li a span{
+    background-image: url("../img/KHawy.png");
+    height: 30px;
+    width: 28px;
+    margin-left: 0;
+}
+#new_nav ul li a .span_new{
+    background-position: -129px -25px;
+}
+#new_nav ul li a .span_new_two{
+    background-position: -99px -24px;
+}
+
+#new_nav ul{
+    padding: 0;
+    margin-top: 7px;
+}
+#new_nav ul li{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0;
+}
+#login_nav a{
+    padding: 0;
+}
+
+#login_nav span{
+    font-weight: 100;
+    margin-left: 10px;
+}
+#login_nav ul li a{
+    height: 40px;
+    line-height: 40px;
+}
+#login_nav ul li a span{
+    background-image: url("../img/KHawy.png");
+    height: 30px;
+    width: 28px;
+    margin-left: 0;
+}
+#login_nav ul li a .span_home{
+    background-position: -73px -56px;
+}
+#login_nav ul li a .span_Account{
+    background-position: -103px -56px;
+}
+#login_nav ul li a .span_out{
+    background-position: -133px -56px;
+}
+#login_nav ul{
+    padding: 0;
+    margin-top: 7px;
+}
+#login_nav ul li{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0;
+}
+/*以上为下拉菜单*/
+
+/*  导航栏1170px以上占70%*/
+@media screen and (min-width: 1170px) {
+    .nav_div {
+        width: 70%;
+        margin: auto !important;
+    }
+}
+
+/*分类标签低于1300px消失*/
+@media screen and (max-width: 1300px) {
+    .nav_a {
+        display: none;
+    }
+}
+
+/* 分类那个按钮的外边框*/
+.collapse .nav_a .nav_a_a {
+    display: block;
+    border: solid 1px #CCCCCC;
+    border-radius: 60px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #777;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+/*分类标签的划入样式*/
+
+.collapse .nav_a .nav_a_a:hover {
+    color: #ff7e7e;
+    border: solid 1px #ff7e7e;
+    background-color: rgba(255, 192, 203, 0.15);
+}
+.collapse .nav_a ul{
+    left: 300px;
+    width: 260px;
+}
+.collapse .nav_a ul li{
+    display: inline-block;
+    width: 50px;
+    margin-left: 20px;
+}
+.collapse .nav_a ul li a{
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0;
+}
+.collapse .nav_li {
+    margin-right: 0;
+}
+
+/*注册登录按钮*/
+.collapse .nav_li li {
+    font-size: 1.3em;
+    margin-top: 10px;
+    /*margin-right: 50px;*/
+}
+
+/*搜索按钮的form表单的css*/
+.navbar .collapse .nav_button {
+    margin-left: 30px;
+}
+
+/*搜索框*/
+.navbar .collapse .nav_button input {
+    border: solid 1px #ff7e7e;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    box-shadow: none;
+}
+
+/*搜索框边上的按钮*/
+.navbar .collapse .nav_button button {
+    background-color: #ff7e7e;
+    border: 0;
+    width: 50px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-left: -5px;
+    outline: none;
+    margin-top: 3px;
+}
+/*导航栏结束*/
+
+
+
+body, .container {
+    margin: 0px;
+    min-width: 100%;
+}
+
+.container .section {
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.container .section a:hover {
+    color: #ff7e7e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*标签页*/
+.container .main {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+#myTab {
+    padding: 0px;
+    height: 40px;
+    list-style: none;
+    background-color: rgba(204, 204, 204, 0.21);
+    min-width: 600px;
+}
+
+#myTab li {
+    margin-left: 10px;
+    float: left;
+    margin-top: 16px;
+    height: 24px;
+    border-top: solid 1px rgba(204, 204, 204, 0.6);
+    border-left: solid 1px rgba(204, 204, 204, 0.6);
+    border-right: solid 1px rgba(204, 204, 204, 0.6);
+    border-radius: 4px 4px 0px 0px;
+}
+
+#myTab li a {
+    width: 100%;
+    border-radius: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5678a0;
+}
+
+/*基本信息*/
+#div01{
+    margin-top: 50px;
+}
+
+/*上传头像样式*/
+#oDiv{
+    height: 120px;
+    width: 120px;
+    border:1px solid #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+#div01 .tab01 .all{
+    display: flex;
+    color: #bbb;
+    font-size: 12px;
+}
+#div01 .tab01 .all .tab01-011{
+    margin-left: 20px;
+}
+label{
+    position: relative;
+}
+#oInput{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+#btn{
+    margin-right: 5px;
+    background-color: #ff7e7e;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+#div01 .tab01 .all .tab01-011 .tab02-p{
+    margin-top: 10px;
+}
+#div01 .tab01 .all label:hover{
+    cursor: pointer;
+}
+/*上传头像样式*/
+
+#div01 .tab02 {
+    border-top: 1px solid #d7eafb;
+}
+
+#div01 .tab02 table {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#div01 .tab02 table tr th {
+    text-align: right;
+    font-weight: 400;
+    width: 200px;
+    min-width: 100px;
+    vertical-align: top;
+    padding: 15px;
+}
+
+#div01 .tab02 table tr td .tab02-01 {
+    margin: 15px 30px;
+}
+
+#div01 .tab02 table tr th {
+    margin-top: 0px;
+}
+
+#div01 .tab02 table tr td .tab02-01 textarea {
+    width: 430px;
+    height: 200px;
+    min-width: 430px;
+    outline: none;
+}
+#div01 .tab02 table tr td .tab02-01 input{
+    outline:none
+}
+#div01 .tab02 table tr td .tab02-02 a {
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ff7e7e;
+    color: white;
+    text-decoration: none;
+    margin: 20px 30px;
+}
+
+/*邮箱界面*/
+#div02 .tab01 table {
+    margin-top: 50px;
+    min-width: 600px;
+}
+
+#div02 .tab01 table tr {
+    height: 50px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+}
+
+#div02 .tab01 table tr {
+    height: 50px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+}
+
+#div02 .tab01 table tr td input {
+    width: 188px;
+    height: 30px;
+    margin: 0px 40px 0px 20px;
+    outline: none;
+    background-color: rgb(250, 255, 189) !important;
+    border: solid 1px #d4d4d4;
+}
+
+#div02 .tab01 table tr .tab02-03 a {
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ff7e7e;
+    color: white;
+    text-decoration: none;
+    margin: 20px 20px;
+}
+
+/*修改密码界面*/
+#div03 .tab01 table {
+    margin-top: 50px;
+    min-width: 600px;
+}
+
+#div03 .tab01 table tr {
+    height: 50px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+}
+
+#div03 .tab01 table tr th {
+    text-align: right;
+    font-weight: 400;
+}
+
+#div03 .tab01 table tr td input {
+    width: 188px;
+    height: 30px;
+    margin: 0px 20px;
+    outline: none;
+}
+
+#div03 .tab01 table tr td .tab01-01 a {
+    display: block;
+    width: 90px;
+    height: 30px;
+    color: rgba(255, 255, 255, .85);
+    background: #9cacba;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 20px;
+    text-decoration: none;
+}

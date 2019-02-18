@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号设置</title>
+    <link rel="stylesheet" href="../css/edit.css">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top nav_top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--中间70%那部分-->
+            <div class="nav_div">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!--响应式的点击按钮-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--爱享的icon-->
+                    <a href="javascript:void(0)"
+                       style="background-image: url('../img/icon_4.png');background-size: 76px">堆糖</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--分类的a标签-->
+                    <ul class="nav navbar-nav nav_a">
+                        <div class="nav_a_a drop_down_four">分类 <span class="glyphicon glyphicon-menu-down"></span></div>
+                        <ul class="dropdown-menu dropdown-menu_four">
+                            <li><a href="#">家居生活</a></li>
+                            <li><a href="#">花卉</a></li>
+                            <li><a href="#">美景</a></li>
+                            <li><a href="#">人文艺术</a></li>
+                            <li><a href="#">旅游</a></li>
+                            <li><a href="#">古风</a></li>
+                            <li><a href="#">动漫</a></li>
+                            <li><a href="#">头像</a></li>
+                            <li><a href="#">摄影</a></li>
+                            <li><a href="#">美食</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right nav_li">
+                        <li class="dropdown" id="share_nav">
+                            <a href="#" class="dropdown-toggle drop_down_three" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><span>&nbsp;&nbsp;&nbsp;&nbsp;+发布</span></a>
+                            <ul class="dropdown-menu dropdown-menu_three">
+                                <li><a href="#"><span style="display: inline-block" class="span_share">&nbsp;</span>上传图片</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_share_two">&nbsp;</span>发布文章</a></li>
+                                <li id="share_video"><a href="#"><span style="display: inline-block" class="span_share_three">&nbsp;</span>发布视频</a></li>
+                            </ul>
+                        </li>
+                        <li class="kong"></li>
+                        <li><a href="#">生活家</a></li>
+                        <li class="kong"></li>
+                        <li class="dropdown" id="new_nav">
+                            <a href="#" class="dropdown-toggle drop_down_two" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><span>消息</span></a>
+                            <ul class="dropdown-menu dropdown-menu_two">
+                                <li><a href="#"><span style="display: inline-block" class="span_new">&nbsp;</span>消息提醒</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_new_two">&nbsp;</span>动态提醒</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="kong"></li>
+                        <li id="rigist_nav" class=""><a href="#">登录/注册</a></li>
+                        <!--下拉列表-->
+                        <li class="dropdown" id="login_nav">
+                            <a href="#" class="dropdown-toggle drop_down_one" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false" ><div id="nav_icon"></div></a>
+
+                            <ul class="dropdown-menu dropdown-menu_one">
+                                <li id="span_home"><a href="#"><span style="display: inline-block" class="span_home">&nbsp;</span>个人中心</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_Account ">&nbsp;</span>账号设置</a></li>
+                                <li><a href="#"><span style="display: inline-block" class="span_out">&nbsp;</span>退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--搜索框-->
+                    <form class="navbar-form navbar-left nav_button">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入你想要的内容">
+                        </div>
+                        <button type="submit" class="btn btn-default"><img src="../img/search.svg" alt="error"></button>
+                    </form>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </nav>
+
+    <div class="section"><a href="">我的爱享</a>&nbsp;&gt;&nbsp;<a>账号设置</a>&nbsp;&gt;&nbsp;<a>密码</a></div>
+    <div class="main">
+        <div class="">
+            <ul id="myTab">
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">邮箱</a></li>
+                <li><a href="#">密码</a></li>
+                <li><a href="#">绑定账号</a></li>
+            </ul>
+            <div id="myTabContent">
+                <!--修改资料,上传头像-->
+                <div style="display: block" id="div01">
+                    <div class="tab01">
+                        <div class="all">
+                            <div id="oDiv">
+                            </div>
+                            <div class="tab01-011">
+                                <div>
+                                    <p>在爱享大家都是“有头有脸”的朋友，上传头像让大家更快认识您。</p>
+                                    <p>选择喜欢的图片作为您的头像：</p>
+                                </div>
+                                <label for="oInput">
+                                    <input type="button" id="btn" value="点我上传"><span id="text"></span>
+                                    <input type="file" accept="image/*" id="oInput" value=""/>
+                                </label>
+                                <p class="tab02-p">可选择喜欢的图片作为您的头像：</p>
+                            </div>
+                        </div>
+                        <div class="tab02">
+                            <table>
+                                <tr>
+                                    <th>用户名</th>
+                                    <td>
+                                        <div class="tab02-01">
+                                            <input type="text" value="乔恩全" id="user_name">
+                                            <span>(修改昵称的机会每个月只有一次哦~)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>性别</th>
+                                    <td>
+                                        <div class="tab02-01" id="gender">
+                                            <input type="radio" id="gender-0" name="gender" value="0"
+                                                   onchange="test(this)">
+                                            <lable for="gender-0">女</lable>
+                                            <input type="radio" id="gender-1" name="gender" value="1"
+                                                   onchange="test(this)">
+                                            <lable for="gender-0">男</lable>
+                                            <input type="radio" id="gender-2" name="gender" value="2"
+                                                   onchange="test(this)">
+                                            <lable for="gender-0">保密</lable>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>破壳日</th>
+                                    <td>
+                                        <div class="tab02-01">
+                                            <form action="" method="post">
+                                                <select id="year" size="1" onchange="changeOption()">
+                                                    <option></option>
+                                                </select>年
+                                                <select id="month" size="1" onchange="changeOption()">
+                                                    <option></option>
+                                                </select>月
+                                                <select id="day" size="1">
+                                                    <option>1</option>
+                                                </select>日
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>城市</th>
+                                    <td>
+                                        <div class="tab02-01">
+                                            <form method="post">
+                                                省份：<select id="province" onchange="addCity()">
+                                            </select>
+                                                城市：<select id="city">
+                                            </select>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>一句话介绍</th>
+                                    <td>
+                                        <div class="tab02-01">
+                                            <p>说说你喜欢什么，也可以写上你的新浪微博、豆瓣、个人博客等。</p>
+                                            <textarea name="" id="" cols="40" rows="5" maxlength="70"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <div class="tab02-02"><a href="">保存设置</a></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--邮箱-->
+                <div style="display: none" id="div02">
+                    <div class="tab01">
+                        <table>
+                            <tr>
+                                <th>邮箱地址</th>
+                                <td><input type="email" class="div02-01"></td>
+                                <td>(更改邮箱地址)</td>
+                            </tr>
+                            <tr>
+                                <th>确认密码</th>
+                                <td><input type="password" class="div02-02"></td>
+                                <td>(请输入爱享的密码，以确认修改邮箱地址)</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td class="tab02-03"><a href="javascript:void(0);" id="btn01">保存设置</a></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--修改密码-->
+                <div style="display: none" id="div03">
+                    <div class="tab01">
+                        <table>
+                            <tr>
+                                <th>当前密码</th>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <th>新密码</th>
+                                <td><input type="password">密码至少是8位字母加数字</td>
+                            </tr>
+                            <tr>
+                                <th>确认新密码</th>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div class="tab01-01"><a href="#">保存设置</a></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div style="display: none" id="div04">
+                    <div class="tab01">
+                        <p>对不起,网站太过简陋,没有大公司和我们合作,无法与第三方绑定,为了弥补您的遗憾,给你来段freestyle</p>
+                        <p>哎 哎 准备好了没有</p>
+                        <p>你看这个面它又长又宽</p>
+                        <p>就像这个碗它又大又圆</p>
+                        <p>你们 来这里 吃饭 觉得 饭很 好吃 我看行</p>
+                        <p>你们来这里 吃饭 就像我给你们拉面 一样很开心</p>
+                    </div>
+                    <div class="tab02">大傻吊</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../js/edit.js"></script>
+<script src="../js/utils.js"></script>
+<script src="../js/nav_js0.js"></script>
+</body>
+</html>
